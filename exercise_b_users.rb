@@ -55,45 +55,45 @@ users = {
 }
 
 # 1. Get Jonathan's Twitter handle (i.e. the string `"jonnyt"`)
-# p users["Jonathan"][:twitter]
+p users["Jonathan"][:twitter]
 # 2. Get Erik's hometown
-# p users["Erik"][:home_town]
+p users["Erik"][:home_town]
 # 3. Get the array of Erik's lottery numbers
-# p users["Erik"][:lottery_numbers]
+p users["Erik"][:lottery_numbers]
 # 4. Get the type of Avril's pet Monty
-# p users["Avril"][:pets][0][:species]
+p users["Avril"][:pets][0][:species]
 # 5. Get the smallest of Erik's lottery numbers
-# smallest = users["Erik"][:lottery_numbers][0]
-# for number in users["Erik"][:lottery_numbers]
-#   smallest = number if number < smallest
-# end
-# p smallest
+smallest = users["Erik"][:lottery_numbers][0]
+for number in users["Erik"][:lottery_numbers]
+  smallest = number if number < smallest
+end
+p smallest
 # 6. Return an array of Avril's lottery numbers that are even
-# evenarray = []
-# for number in users["Avril"][:lottery_numbers]
-#   evenarray.push(number) if number.even?
-# end
-# p evenarray
+evenarray = []
+for number in users["Avril"][:lottery_numbers]
+  evenarray.push(number) if number.even?
+end
+p evenarray
 # 7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
-# users["Erik"][:lottery_numbers].push(7)
-# p users["Erik"][:lottery_numbers]
+users["Erik"][:lottery_numbers].push(7)
+p users["Erik"][:lottery_numbers]
 # 8. Change Erik's hometown to Edinburgh
-# users["Erik"][:home_town] = "Edinburgh"
-# p users["Erik"][:home_town]
+users["Erik"][:home_town] = "Edinburgh"
+p users["Erik"][:home_town]
 # 9. Add a pet dog to Erik called "Fluffy"
-# users["Erik"][:pets].push({:name => "Fluffy", :species => "dog"})
-# p users["Erik"][:pets]
+users["Erik"][:pets].push({:name => "fluffy", :species => "dog"})
+p users["Erik"][:pets]
 # 10. Add another person to the users hash
-# users["Chris"] =
-# {
-#   :twitter => "chrism",
-#   :lottery_numbers => [1, 2, 3, 4, 5, 6],
-#   :home_town => "Bonnyrigg",
-#   :pets => [
-#     {
-#       :name => "chompy",
-#       :species => "lizard"
-#     }
-#   ]
-# }
-# p users
+users["Chris"] =
+{
+  :twitter => "chrism",
+  :lottery_numbers => [1, 2, 3, 4, 5, 6],
+  :home_town => "Bonnyrigg",
+  :pets => [
+    {
+      :name => "chompy",
+      :species => "lizard"
+    }
+  ]
+}
+p users
